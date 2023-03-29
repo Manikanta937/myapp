@@ -4,4 +4,4 @@ services:
    container_name: node_js
    build: .
    ports:
-    - '1305:8080'
+    - '1305:3000'
