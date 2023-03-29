@@ -1,0 +1,17 @@
+{
+  "name": "jsappl",
+  "version": "1.0.0",
+  "description": "just a basic web application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Manikanta",
+  "license": "ISC",
+  "dependencies": {
+    "upper-case": "^2.0.2"
+  },
+  "devDependencies": {},
+  "keywords": []
+}
