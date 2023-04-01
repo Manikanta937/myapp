@@ -20,10 +20,10 @@ stages{
 }
 post{
  success{
-  echo 'yes, success'
+  echo 'success'
  }
  failure{
-  echo 'No, it's a failure'
+  echo 'its a failure'
  }
 }
 }
