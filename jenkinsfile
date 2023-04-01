@@ -12,7 +12,7 @@ stages{
        echo 'testing the app'
   }
  }
- stage('Deploy'){
+ stage('Deploy){
   steps{
        echo 'deploying the app.'
   }
