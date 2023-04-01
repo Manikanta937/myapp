@@ -18,4 +18,11 @@ stages{
   }
  }
 }
+post{
+ success{
+  echo 'yes, success'
+ }
+ failure{
+  echo 'No, it's a failure'
+ }
 }
