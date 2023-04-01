@@ -26,3 +26,4 @@ post{
   echo 'No, it's a failure'
  }
 }
+}
