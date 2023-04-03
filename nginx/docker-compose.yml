@@ -11,7 +11,7 @@ services:
            - example-net 
     nginx:
      build:
-       context: /root/nginx
+       context: /root/jsapp/nginx
      container_name: nginxserver
      ports:
            - '85:80'
