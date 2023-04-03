@@ -1,23 +1,24 @@
+  GNU nano 6.2                     docker-compose.yml                              
 version: '3'
 
 services:
     nodejs:
          build:
-           context: ./myapp
-         container_name: nodejsser
+           context: /myapp
+         container_name: nodejsserver
          ports:
-           - '3333:3000'
+           - '3000:3000'
          networks:
            - example-net 
     nginx:
-     build:
-       context: ./nginx
-     container_name: nginxser
-     ports:
-           - '85:80'
-     depends_on:
+         build:
+           context: /myapp/nginx
+         container_name: nginxserver
+         ports:
+           - '83:80'
+         depends_on:
            - nodejs
-     networks:
+         networks:
            - example-net
 
 networks:
