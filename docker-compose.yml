@@ -6,7 +6,7 @@ services:
            context: .
          container_name: nodejsserver
          ports:
-           - '3000:3000'
+           - '1307:3000'
          networks:
            - example-net 
     nginx:
