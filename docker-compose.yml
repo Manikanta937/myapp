@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+    nodejs:
+         build:
+           context: /myapp
+         container_name: nodejsserver
+         ports:
+           - '3000:3000'
+         networks:
+           - example-net 
+    nginx:
+         build:
+           context: /myapp/nginx
+         container_name: nginxserver
+         ports:
+           - '83:80'
+         depends_on:
+           - nodejs
+         networks:
+           - example-net
+
+networks:
+  example-net:
+     external: true
