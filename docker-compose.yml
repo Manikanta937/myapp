@@ -1,7 +1,0 @@
-version: "3"
-services:
-  node_app:
-   container_name: node_js
-   build: .
-   ports:
-    - '1307:3000'
