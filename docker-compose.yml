@@ -3,7 +3,7 @@ version: '3'
 services:
     nodejs:
          build:
-           context: /myapp
+           context: .
          container_name: nodejsserver
          ports:
            - '3000:3000'
@@ -11,7 +11,7 @@ services:
            - example-net 
     nginx:
          build:
-           context: /myapp/nginx
+           context: ./nginx
          container_name: nginxserver
          ports:
            - '83:80'
