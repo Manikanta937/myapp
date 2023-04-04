@@ -14,7 +14,7 @@ services:
            context: ./nginx
          container_name: nginxserver
          ports:
-           - '81:80'
+           - '85:80'
          depends_on:
            - nodejs
          networks:
